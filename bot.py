@@ -30,9 +30,10 @@ def main():
             print('Saving hot posts...')
             submission.save() #Saves the selected posts
             saved_posts.append(submission.id) #Adds the posts id to an array to check if it has already saved that post
-            sleep(sleep_time*60) #Sets the amount of time between checks
         else:
             pass
+        
+    sleep(sleep_time*60) #Sets the amount of time between checks
 
 if __name__ == '__main__':
     while True:
